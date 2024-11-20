@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verilog Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+    <div id="mainContainer">
+        <!-- Welcome Section -->
+        <div id="welcomePage" class="card">
+            <h1> Verilog Code Generator</h1>
+            <h2> by KS HARSHAVARDHAN (23BEC0253)</h2>
+        </div>
+    </div>
+        <!-- Tasks Container -->
+        <div class="task-container">
+
+                 <div class="task" id="registrationAndTask1">
+                <!-- Separate Box for Assigned Tasks -->
+                <div class="separate-box">
+                    <h3>BCD | EXCESS N COUNTER | MOD N COUNTER</h3>
+                    <button onclick="window.location.href='https://colab.research.google.com/drive/1mpPklcnYkHCsqPSy-XHvZL9PDbrlxqdr?usp=sharing';">
+                        Verilog Code for Assigned BCD
+                    </button>
+                    <button onclick="window.location.href='https://colab.research.google.com/drive/15nBSucJgRYgC2leWKGNZ5P_lU_ISmU5s?usp=sharing';">
+                        Verilog Code for Assigned Excess N Counter
+                    </button>
+                    <button onclick="window.location.href='https://colab.research.google.com/drive/1jfXkjwQ_VIHnXjzUnz_hdakd4N5Teyi2?usp=sharing';">
+                        Verilog Code for Assigned Mod N Counter
+                    </button>
+                </div>
+            
+                <!-- Registration Section -->
+                <div class="card">
+                    <section id="registrationSection">
+                        <h2>VERILOG BASED ON REGISTRATION NUMBER</h2>
+                        <form id="registrationForm">
+                            <!-- Inputs -->
+                            <input type="text" id="regNumber" placeholder="Enter registration number" />
+                            <select id="logicType">
+                                <option value="SL">Structural Logic</option>
+                                <option value="DFL">Data Flow Logic</option>
+                                <option value="BL">Behavioral Logic</option>
+                            </select>
+                            <button type="button" id="generateButton">Generate</button>
+                        </form>
+                    
+                        <div style="position: relative; margin-top: 20px;">
+                            <pre id="output" style="padding: 20px; border: 1px solid #ccc; border-radius: 5px;">
+                    Generated Verilog code will appear here...
+                        </pre>
+                            <button type="button" id="copyButton" style="
+                            position: absolute;
+                            top: 10px;
+                            right: 50px;
+                            background-color: #007bff;
+                            color: white;
+                            border: none;
+                            border-radius: 3px;
+                            padding: 5px 10px;
+                            font-size: 12px;
+                            cursor: pointer;
+                            width: 60px;
+                          ">
+                                Copy
+                            </button>
+                        </div>
+                    </section>                                
+                </div>
+            </div>
+            
+
+            <!-- Task 1 Section -->
+            <div class="task" id="task1">
+                <h2> HA, FA, HS, FS</h2>
+                <div class="task-grid">
+                    <!-- Half Adder Section -->
+                    <div class="task-column">
+                        <h3>HA</h3>
+                        <button onclick="window.location.href='https://www.jdoodle.com/a/8Hsk';">HA using DFL</button>
+                        <button onclick="window.location.href='https://www.jdoodle.com/a/8Ht3';">HA using BL</button>
+                        <button onclick="window.location.href='https://www.jdoodle.com/a/8HsR';">HA using SL</button>
+                    </div>
+                    <!-- Full Adder Section -->
+                    <div class="task-column">
+                        <h3>FA</h3>
+                        <button onclick="window.location.href='https://www.jdoodle.com/a/8Hti';">FA using DFL</button>
+                        <button onclick="window.location.href='https://www.jdoodle.com/a/8Htk';">FA using BL</button>
+                        <button onclick="window.location.href='https://www.jdoodle.com/a/8Hto';">FA using SL</button>
+                    </div>
+                    <!-- Half Subtractor Section -->
+                    <div class="task-column">
+                        <h3>HS</h3>
+                        <button onclick="window.location.href='https://www.jdoodle.com/a/8Hts';">HS using DFL</button>
+                        <button onclick="window.location.href='https://www.jdoodle.com/a/8Htw';">HS using BL</button>
+                        <button onclick="window.location.href='https://www.jdoodle.com/a/8Htx';">HS using SL</button>
+                    </div>
+                    <!-- Full Subtractor Section -->
+                    <div class="task-column">
+                        <h3>FS</h3>
+                        <button onclick="window.location.href='https://www.jdoodle.com/a/8HtE';">FS using DFL</button>
+                        <button onclick="window.location.href='https://www.jdoodle.com/a/8HtI';">FS using BL</button>
+                        <button onclick="window.location.href='https://www.jdoodle.com/a/8HtM';">FS using SL</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Task 2 Section -->
+            <div class="task" id="task2">
+                <h2> MUX and Boolean Expressions</h2>
+                <div class="task-grid">
+                    <!-- MUX Implementation -->
+                    <div class="task-column1">
+                        <h3>MUX Implementation</h3>
+                        <button onclick="window.location.href='https://www.jdoodle.com/a/8Hu8';">SL 64:1 MUX</button>
+                        <button onclick="window.location.href='https://www.jdoodle.com/a/8Hu2';">DFL 32:1 MUX</button>
+                        <button onclick="window.location.href='https://www.jdoodle.com/a/8Hu0';">BL 4:1 MUX</button>
+                        <button onclick="window.location.href='https://www.jdoodle.com/a/8HtQ';">2:1 MUX</button>
+                    </div>
+                    <!-- Boolean Expressions -->
+                    <div class="task-column1">
+                        <h3>Boolean Expressions</h3>
+                        <button onclick="window.location.href='https://www.jdoodle.com/a/8HFe';">Using 16:1 MUX</button>
+                        <button onclick="window.location.href='https://www.jdoodle.com/a/8HFi';">Using 4:16 Decoder</button>
+                    </div>
+                    <!-- Adder/Subtractor with MUX -->
+                    <div class="task-column1">
+                        <h3>Adder/Subtractor with MUX</h3>
+                        <button onclick="window.location.href='https://www.jdoodle.com/a/8HFn';">HA using 4:1 MUX</button>
+                        <button onclick="window.location.href='https://www.jdoodle.com/a/8HFr';">FA using 8:1 MUX</button>
+                        <button onclick="window.location.href='https://www.jdoodle.com/a/8HFa';">HS using 2:1 MUX</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Task 3 Section -->
+            <div class="task" id="task3">
+                <h2> Adder | Multiplier</h2>
+                <div class="button-container">
+                    <button onclick="window.location.href='https://www.jdoodle.com/a/8Ih3';">1-bit Comparator</button>
+                    <button onclick="window.location.href='https://www.jdoodle.com/a/8Ikp';">  
+                        4 bit Adder SL        
+                    </button>   <!--DONE-->
+                    <button onclick="window.location.href='https://www.jdoodle.com/a/8Ikq';">  
+                        4 bit Adder/Sub        
+                    </button>   <!--DONE-->
+                    <button onclick="window.location.href='https://www.jdoodle.com/a/8Ikr';">
+                        4 bit Multiplier     
+                    </button>
+                </div>
+            </div>
+
+            <!-- Task 4 Section -->
+            <div class="task" id="task4">
+                <h2> ALU and Booth Multiplier </h2>
+                <div class="button-container">
+                    <button onclick="window.location.href='https://www.jdoodle.com/a/8HFA';">
+                        1 bit ALU
+                    </button>
+                    <button onclick="window.location.href='https://www.jdoodle.com/a/8HFB';">
+                        4 bit ALU
+                    </button><br>
+                    <button onclick="window.location.href='https://www.jdoodle.com/a/8HFC';">
+                        8 bit ALU
+                    </button>
+                    <button onclick="window.location.href='https://www.jdoodle.com/a/8HFF';">
+                        32 bit ALU
+                    </button><br>
+                    <button onclick="window.location.href='https://www.jdoodle.com/a/8HFG';">
+                        4 bit Booth Multiplier
+                    </button><br>
+                </div>
+            </div>
+
+            <!-- Task 5 Section -->
+            <div class="task" id="task5">
+                <h2> Counters and Registers</h2>
+                <div class="button-container">
+                    <button onclick="window.location.href='https://www.jdoodle.com/a/8HuQ';">
+                        Bi-directional Shift register
+                    </button><br>
+                    <button onclick="window.location.href='https://www.jdoodle.com/a/8HuT';">
+                        Up Down Gray Counter 
+                    </button><br>
+                    <button onclick="window.location.href='https://www.jdoodle.com/a/8HXh';">
+                        Asynchronous 4-bit Up/Down Counter
+                    </button><br>
+                    <button onclick="window.location.href='https://www.jdoodle.com/a/8HXj';">
+                        Synchronous 4-bit Up/Down counter
+                    </button><br>
+                    <button onclick="window.location.href='https://www.jdoodle.com/a/8HuZ';">
+                        Ring Counter
+                    </button>
+                    <button onclick="window.location.href='https://www.jdoodle.com/a/8Hv2';">
+                        Johnson Counter
+                    </button><br>
+                    <button onclick="window.location.href='https://www.jdoodle.com/a/8HXp';">
+                        Up/Down Random Counter Synchronous
+                    </button><br>
+                    <button onclick="window.location.href='https://www.jdoodle.com/a/8HXq';">
+                        Up/Down Random Counter Asynchronous
+                    </button><br>
+                </div>
+            </div>
+
+        </div>
+    </div>
+     <!-- Modal for Displaying Code -->
+     <div id="codeModal" style="display: none;">
+        <div class="modal-content">
+            <span id="closeModal">&times;</span>
+            <pre id="codeContent">Code will be displayed here...</pre>
+        </div>
+    </div>
+</div>
+<script>
+    // Helper functions for generating Verilog code
+    function determineMinterms(regNumber) {
+        let minterms = [];
+        for (let char of regNumber.toUpperCase()) {
+            if (!isNaN(char)) {
+                minterms.push(parseInt(char));
+            } else if (char >= 'A' && char <= 'F') {
+                minterms.push(char.charCodeAt(0) - 55); // A = 10, B = 11, ..., F = 15
+            }
+        }
+        return minterms;
+    }
+
+    function generateStructuralVerilog(regNumber) {
+        const minterms = determineMinterms(regNumber);
+        return `// Structural Verilog code for registration ${regNumber}\nmodule SL(...);\n// Minterms: ${minterms}\nendmodule`;
+    }
+
+    function generateDataFlowVerilog(regNumber) {
+        const minterms = determineMinterms(regNumber);
+        return `// Dataflow Verilog code for registration ${regNumber}\nmodule DFL(...);\n// Minterms: ${minterms}\nendmodule`;
+    }
+
+    function generateBehavioralVerilog(regNumber) {
+        const minterms = determineMinterms(regNumber);
+        return `// Behavioral Verilog code for registration ${regNumber}\nmodule BL(...);\n// Minterms: ${minterms}\nendmodule`;
+    }
+
+    function generateVerilogCode(regNumber, logicType) {
+        const minterms = determineMinterms(regNumber);
+        if (minterms.length === 0) {
+            alert("No valid minterms found based on the registration number.");
+            return "// No Verilog code generated.";
+        }
+        switch (logicType) {
+            case "sl":
+                return generateStructuralVerilog(regNumber);
+            case "dfl":
+                return generateDataFlowVerilog(regNumber);
+            case "bl":
+                return generateBehavioralVerilog(regNumber);
+            default:
+                alert("Invalid logic type!");
+                return "// Invalid logic type selected.";
+        }
+    }
+
+    // Event listener for Generate button
+    // document.getElementById("generateButton").addEventListener("click", () => {
+    //     const regNumber = document.getElementById("regNumber").value.trim();
+    //     const logicType = document.getElementById("logicType").value;
+    //     if (!regNumber) {
+    //         alert("Please enter a valid registration number.");
+    //         return;
+    //     }
+    //     const verilogCode = generateVerilogCode(regNumber, logicType);
+    //     document.getElementById("output").textContent = verilogCode;
+    // });
+</script>
+<!-- Include this at the end of the <body>, after all your content -->
+    <script src="script.js"></script>
+</div>
+</body>
+</html>
