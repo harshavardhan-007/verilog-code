@@ -22,14 +22,7 @@ assets/
   js/app.js         # UI wiring
 ```
 
-## Adding / editing programs
-Edit `assets/js/data.js` only:
-```js
-{ name: "Half Adder (HA)", note: "Sum = A ⊕ B · Carry = A·B", links: [
-    { label: "Dataflow", url: jd("8Hsk"), tag: "DFL",
-      code: `module half_adder (...); ... endmodule` }   // code is optional → adds a </> button
-]}
-```
+
 
 ## Run locally
 Extract the folder, then open `index.html`, or run `python3 -m http.server`.
