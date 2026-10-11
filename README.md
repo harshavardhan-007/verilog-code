@@ -22,7 +22,3 @@ assets/
   js/app.js         # UI wiring
 ```
 
-
-
-## Run locally
-Extract the folder, then open `index.html`, or run `python3 -m http.server`.
